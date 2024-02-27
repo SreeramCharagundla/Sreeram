@@ -1,0 +1,132 @@
+@keyframes fade-in {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  
+  .animated-element {
+    animation-name: fade-in;
+    animation-duration: 2s; 
+    animation-fill-mode: both; 
+    animation-delay: 0.5s; 
+  }
+
+.p-menubar .p-menubar-custom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-items {
+    display: flex;
+    gap: 10px; /* Adjust the gap between icons as needed */
+}
+
+.p-card {
+  max-width: 450px; /* Adjust the card width as necessary */
+  margin: auto;
+  border: 1px solid #ddd; /* subtle border */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* light shadow for depth */
+  border-radius: 8px; /* rounded corners */
+  overflow: hidden; /* ensures the content respects border radius */
+  background-color: #003366;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centers content on the cross axis */
+  padding: 20px;
+}
+
+.card-image img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%; /* circular image */
+  border: 3px solid #ddd; /* subtle border around the image */
+  margin-bottom: 20px;
+}
+
+.card-details {
+  text-align: center;
+}
+
+.card-details h2 {
+  margin: 0;
+  color: #333;
+  font-size: 1.5em;
+}
+
+.card-details p {
+  color: #555;
+  margin: 5px 0;
+}
+
+.experience, .profession {
+  display: inline-block;
+  background-color: #eee;
+  padding: 5px 15px;
+  margin: 5px 0;
+  border-radius: 20px; /* rounded pill shape */
+  font-weight: bold;
+  font-size: 0.85em;
+}
+
+.profession {
+  background-color: #dff0d8; /* a different shade for certification */
+}
+
+.p-card:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+
+.timeline-card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin: auto;
+    border: 1px solid #ddd; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+    border-radius: 8px; 
+  }
+  
+  .event-content {
+    /* Style for the content inside each timeline event */
+    border-left: 2px solid #56198b;
+    padding-left: 1rem;
+    margin-left: 1rem;
+    position: relative;
+  }
+  
+  .event-content:before {
+    content: '';
+    position: absolute;
+    left: -8px; /* Adjust this value to move the circle left/right */
+    top: 0;
+    background: #56198b;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+  }
+  
+  .event-content h3 {
+    font-size: 1.2rem;
+  }
+  
+  .event-content p {
+    font-size: 1rem;
+    color: #333;
+    margin: 0.5rem 0;
+  }
+
+  #menubar{
+    position: fixed;
+    width: calc(100vw - 16px);
+    z-index: 100;
+  }
+
+  .content{
+    margin-top: 55px;
+  }
+
+  ::ng-deep .p-timeline-event-separator{
+    color: #333;
+  }
